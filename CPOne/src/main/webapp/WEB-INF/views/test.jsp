@@ -8,20 +8,10 @@
 </head>
 <body>
 
+username : ${temp.user_name}<br/>
+userpass : ${temp.user_pass}<br/>
+userzip : ${temp.user_zip}<br/>
+
+
 </body>
-
-
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDfFCnzw6wzImhrI9Ul7G0hCzkS_ycQP5Y",
-    authDomain: "cpone-51e89.firebaseapp.com",
-    databaseURL: "https://cpone-51e89.firebaseio.com",
-    projectId: "cpone-51e89",
-    storageBucket: "",
-    messagingSenderId: "432689274485"
-  };
-  firebase.initializeApp(config);
-</script>
 </html>
