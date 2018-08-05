@@ -1,4 +1,4 @@
-package kr.cpone.front.mail.controller;
+package CPOne.mail.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
