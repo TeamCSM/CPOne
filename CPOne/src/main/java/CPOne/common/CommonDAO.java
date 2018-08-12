@@ -8,8 +8,20 @@ import javax.inject.Inject;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
+import org.aspectj.lang.annotation.DeclareAnnotation;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
-public class commonService {
+/**
+ * 
+ * @author jsp
+ * @since 2018. 08. 12.
+ * @see DB연동에 관련된 DAO를 모아놓은것
+ *
+ */
+
+@Repository
+public class CommonDAO {
 	
 	@Inject
 	private SqlSession session;
