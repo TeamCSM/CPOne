@@ -16,6 +16,7 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	
+	<context:component-scan base-package="CPOne.mail.service"/>
 
 	<context:property-placeholder location="classpath:/mybatis/jdbc_properties" />
 
@@ -41,7 +42,5 @@
 	</bean>
 
 	<tx:annotation-driven transaction-manager="transactionManager" />
-
-	<context:component-scan base-package="CPOne.mail.service"/>
 
 </beans>

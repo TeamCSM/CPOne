@@ -8,7 +8,7 @@ public class MailController {
 
 	@RequestMapping(value="/cpone/front/mail/mailMainView.do")
 	public String mailMainView() throws Exception {
-		String mailMainView = "mail/mailMain";
+		String mailMainView = "mail/mailList";
 		
 		return mailMainView;
 	}
