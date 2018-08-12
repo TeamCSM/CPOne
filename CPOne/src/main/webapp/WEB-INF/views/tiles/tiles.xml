@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Main LayOut -->
+	<definition name="main_Layout" template="/WEB-INF/views/tiles/layouts/main_Layout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/main_header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/main_footer.jsp" />
+	</definition>
+	
+	<!-- Mail LayOut -->
+	<definition name="mail_Layout" template="/WEB-INF/views/tiles/layouts/mail_Layout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/mail_header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/mail_footer.jsp" />
+	</definition>
+	
+	
+	<!-- Main -->
+	<definition name="main/*" extends="main_Layout">
+		<put-attribute name="body" value="/WEB-INF/views/main/{1}.jsp" />
+	</definition>
+	
+	<definition name="main/*/*" extends="main_Layout">
+		<put-attribute name="body" value="/WEB-INF/views/main/{1}/{2}.jsp" />
+	</definition>
+	
+	<!-- Mail -->
+	<definition name="mail/*" extends="mail_Layout">
+		<put-attribute name="body" value="/WEB-INF/views/mail/{1}.jsp" />
+	</definition>
+	
+	<definition name="mail/*/*" extends="mail_Layout">
+		<put-attribute name="body" value="/WEB-INF/views/mail/{1}/{2}.jsp" />
+	</definition>
+	
+	
+	
+</tiles-definitions>
