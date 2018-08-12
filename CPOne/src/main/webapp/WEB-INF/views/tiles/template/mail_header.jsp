@@ -11,7 +11,7 @@
 		</div>
 		<!-- logo -->
 		<div class="navbar-brand">
-			<a href="/cpone/front/mail/mailMainView.do"><img src="<%=Ctx %>/resources/mail/img/logo.png" alt="Logo" class="img-responsive logo"></a>
+			<a href="/cpone/mail/mailMainView.do"><img src="<%=Ctx %>/resources/mail/img/logo.png" alt="Logo" class="img-responsive logo"></a>
 		</div>
 		<!-- end logo -->
 		<div class="navbar-right">
