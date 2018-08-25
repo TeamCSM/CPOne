@@ -8,6 +8,10 @@
 		<li><a href="">Blog</a></li>
 		<li><a href="/cpone/dbTest.do">DB_TEST</a></li>
 		<li><a href="/cpone/mail/mailMainView.do">Mail</a></li>
-		<li><a class="active" href="">Log in</a></li>
+		<li><a class="active" class="lgnForm" role="button" data-toggle="modal" data-target="#lgn-modal" href="/cpone/user/userLogin.do">Log in</a></li>
 	</ul>
 </nav>
+
+
+
+

@@ -10,23 +10,8 @@
 <title>CPOne | Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<link rel="stylesheet" href="<%=Ctx %>/resources/main/css/style.css" />
-<link rel="stylesheet" href="<%=Ctx %>/resources/main/css/bootstrap.css" />
 <link rel="stylesheet" href="<%=Ctx %>/resources/user/css/style.css" />
 <link rel="stylesheet" href="<%=Ctx %>/resources/user/js/jquery.js" />
-
-<script type="text/javascript">
-    $(window).on('scroll', function() {
-      if($(window).scrollTop()) {
-        $('nav').addClass('black');
-      }
-      else {
-        $('nav').removeClass('black');
-      }
-    })
-</script>
-
 </head>
 <body>
 
