@@ -14,4 +14,11 @@ public class CommonFinalString {
 	public static final String MAIL_DB = "CPOne.mailMapper";
 	public static final String MAIN_DB = "CPOne.mainMapper";
 	
+	
+	
+	
+	
+	
+	/////////////////////////////////////////////////////////
+	public static final String FILE_DIR = "file001";
 }

@@ -6,7 +6,7 @@
 <mapper namespace="CPOne.mailMapper">
 
 <select id="test" resultType="java.util.HashMap">
-	select * from cpone_test
+	select * from CPONE_user
 </select>
 
 </mapper>
