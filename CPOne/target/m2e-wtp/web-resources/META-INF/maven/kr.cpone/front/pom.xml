@@ -12,7 +12,7 @@
 		<java-version>1.8</java-version>
 		<org.springframework-version>4.1.7.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
-		<org.slf4j-version>1.6.6</org.slf4j-version>
+		<org.slf4j-version>1.7.25</org.slf4j-version>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -83,6 +83,7 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
+
 
 		<!-- @Inject -->
 		<dependency>
@@ -165,6 +166,15 @@
 			<version>1.16</version>
 		</dependency>
 
+		<!-- logback lib -->		
+		<dependency>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-core</artifactId>
+		    <version>1.2.3</version>
+		</dependency>
+		
+		
+
 		<!-- 파일업로드 lib -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -201,6 +211,12 @@
 		    <groupId>org.apache.tiles</groupId>
 		    <artifactId>tiles-core</artifactId>
 		    <version>3.0.7</version>
+		    <exclusions>
+		    	<exclusion>
+		    		<groupId>org.slf4j</groupId>
+		    		<artifactId>jcl-over-slf4j</artifactId>
+		    	</exclusion>
+		    </exclusions>
 		</dependency>
 		<dependency>
 		    <groupId>org.apache.tiles</groupId>
