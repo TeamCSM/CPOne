@@ -36,7 +36,7 @@
 		<div class="finger"></div>
 	</div>
 </div>
-<form action="insertLogin.do" method="post">
+<form action="userLogin.do" method="post">
 	<div class="hand"></div>
 	<div class="hand rgt"></div>
 	<h1>Panda Login</h1>
