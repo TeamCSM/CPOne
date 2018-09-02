@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="CPOne.user">
+<mapper namespace="CPOne.userMapper">
 	<select id="insertUser" parameterType="hashMap" resultType="int">
 		select count(*) from CPONE_user 
 		where cp_userid = #{id} and cp_userpass=#{pass}
