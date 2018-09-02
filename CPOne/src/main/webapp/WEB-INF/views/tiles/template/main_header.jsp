@@ -13,7 +13,7 @@
 			<li><a class="active" class="lgnForm" role="button" data-toggle="modal" data-target="#lgn-modal" href="/cpone/user/userLogin.do">Log in</a></li>
 		</c:if>
 		<c:if test="${not empty loginUserInfo.id }">
-			<a href="#">${loginUserInfo.id }님 환영합니다.</a>
+			<li><a class="active" class="lgnForm" role="button" data-toggle="modal" data-target="#lgn-modal" href="/cpone/user/userLogout.do">Log out</a></li>
 		</c:if>
 	</ul>
 </nav>

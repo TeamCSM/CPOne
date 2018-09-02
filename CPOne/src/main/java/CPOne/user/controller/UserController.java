@@ -39,9 +39,15 @@ public class UserController {
 		if(userService.insertUser(paramMap) == 1) {
 			session.setAttribute("loginUserInfo", paramMap);
 		}
-		
 		return "redirect:/index.do";
 		
+	}
+	
+	//로그아웃
+	@RequestMapping(value="userLogout.do", method = RequestMethod.GET)
+	public String userLogout(HttpSession session) throws Exception{
+		session.invalidate();
+		return "redirect:/index.do";
 	}
 
 }
