@@ -36,19 +36,19 @@
 		<div class="finger"></div>
 	</div>
 </div>
-<form>
+<form action="insertLogin.do" method="post">
 	<div class="hand"></div>
 	<div class="hand rgt"></div>
 	<h1>Panda Login</h1>
 	<div class="form-group">
-		<input required="required" class="form-control" /> <label
+		<input name="id" required="required" class="form-control" /> <label
 			class="form-label">Username </label>
 	</div>
 	<div class="form-group">
-		<input id="password" type="password" required="required"
+		<input name="pass" type="password" required="required"
 			class="form-control" /> <label class="form-label">Password</label>
 		<p class="alert">Invalid Credentials..!!</p>
-		<button class="btn">Login</button>
+		<button class="btn" type="submit">Login</button>
 	</div>
 </form>
 

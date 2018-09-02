@@ -49,5 +49,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		<filter-name>Character Encoding</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
+	<!-- 세션 시간 설정 -->
+	<session-config>
+    	<session-timeout>30</session-timeout>
+	</session-config>
 
 </web-app>
