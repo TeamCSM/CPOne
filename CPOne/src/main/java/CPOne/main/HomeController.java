@@ -3,9 +3,6 @@ package CPOne.main;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-import java.util.Map;
-
-import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +22,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/index.ino", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
