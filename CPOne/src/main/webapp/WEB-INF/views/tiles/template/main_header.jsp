@@ -22,7 +22,14 @@
             <li class="nav-item"><a href="/cpone/blog/blogMain.ino" class="nav-link">Blog</a></li>
             <li class="nav-item"><a href="/cpone/about/aboutMain.ino" class="nav-link">About</a></li>
             <li class="nav-item"><a href="/cpone/contact/contactMain.ino" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#login-modal">로그인</a></li>
+            <c:choose>
+            	<c:when test="${not empty sessionScope.astory_User} }">
+					<li class="nav-item"><a href="#" class="nav-link">${sessionScope.astory_User} }</a></li>            		
+            	</c:when>
+            	<c:otherwise>
+            		<li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#login-modal">로그인</a></li>	
+            	</c:otherwise>
+            </c:choose>
           </ul>
         </div>
       </div>
@@ -38,8 +45,8 @@
 	  	  			<h1>Login to Your Account</h1><br>
 	  	  		</div>
 			  <form action="/cpone/user/userLoginAction.ino" method="post">
-				<input type="text" name="user" placeholder="Username">
-				<input type="password" name="pass" placeholder="Password">
+				<input type="text" id="user_Email" name="user_Email" placeholder="Username">
+				<input type="password" id="user_Password" name="user_Password" placeholder="Password">
 				<input type="submit" name="login" class="login loginmodal-submit" value="Login" style="cursor: pointer;">
 			  </form>
 				
