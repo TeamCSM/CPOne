@@ -15,13 +15,13 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Tours</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Hotels</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/cpone/tours/toursMain.ino" class="nav-link">Tours</a></li>
+            <li class="nav-item"><a href="/cpone/hotels/hotelsMain.ino" class="nav-link">Hotels</a></li>
+            <li class="nav-item"><a href="/cpone/service/serviceMain.ino" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="/cpone/blog/blogMain.ino" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="/cpone/about/aboutMain.ino" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="/cpone/contact/contactMain.ino" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#login-modal">로그인</a></li>
           </ul>
         </div>
@@ -37,7 +37,7 @@
 	  	  		<div class="modal-header">
 	  	  			<h1>Login to Your Account</h1><br>
 	  	  		</div>
-			  <form action="" method="post">
+			  <form action="/cpone/user/userLoginAction.ino" method="post">
 				<input type="text" name="user" placeholder="Username">
 				<input type="password" name="pass" placeholder="Password">
 				<input type="submit" name="login" class="login loginmodal-submit" value="Login" style="cursor: pointer;">

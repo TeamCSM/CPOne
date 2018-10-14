@@ -9,20 +9,6 @@
 		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/main_footer.jsp" />
 	</definition>
 	
-	<!-- Mail LayOut -->
-	<definition name="mail_Layout" template="/WEB-INF/views/tiles/layouts/mail_Layout.jsp">
-		<put-attribute name="title" value=""></put-attribute>
-		<put-attribute name="header" value="/WEB-INF/views/tiles/template/mail_header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/mail_footer.jsp" />
-	</definition>
-	
-	<!-- User LayOut -->
-	<!-- <definition name="user_Layout" template="/WEB-INF/views/tiles/layouts/user_Layout.jsp">
-		<put-attribute name="title" value=""></put-attribute>
-		<put-attribute name="header" value="/WEB-INF/views/tiles/template/user_header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/user_footer.jsp" />
-	</definition> -->
-	
 	
 	<!-- Main -->
 	<definition name="main/*" extends="main_Layout">
@@ -33,14 +19,10 @@
 		<put-attribute name="body" value="/WEB-INF/views/main/{1}/{2}.jsp" />
 	</definition>
 	
-	<!-- Mail -->
-	<definition name="mail/*" extends="mail_Layout">
-		<put-attribute name="body" value="/WEB-INF/views/mail/{1}.jsp" />
+	<definition name="main/*/*/*" extends="main_Layout">
+		<put-attribute name="body" value="/WEB-INF/views/main/{1}/{2}/{3}.jsp" />
 	</definition>
 	
-	<definition name="mail/*/*" extends="mail_Layout">
-		<put-attribute name="body" value="/WEB-INF/views/mail/{1}/{2}.jsp" />
-	</definition>
 	
 	<!-- User -->
 	<!-- <definition name="user/*" extends="user_Layout">
