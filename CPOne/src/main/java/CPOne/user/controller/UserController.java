@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import CPOne.user.service.UserService;
 
+
 @Controller
 @RequestMapping(value="/cpone/user/*")
 public class UserController {
@@ -20,6 +21,14 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	/**
+	 * 작성자 : 전형동
+	 * 메소드 역할 : 로그인
+	 * @param params
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping(value="userLoginAction.ino")
 	@ResponseBody
 	public String userLoginAction (@RequestParam Map<String, Object> params, HttpSession session) throws Exception {
