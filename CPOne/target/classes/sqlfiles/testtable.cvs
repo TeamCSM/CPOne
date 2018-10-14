@@ -1,0 +1,24 @@
+SELECT 
+			  brdno
+			, brdtitle
+			, brdwriter
+			, brdmemo
+			, DATE_FORMAT(brddate,'%Y-%m-%d') brddate
+			, brdhit
+			, brddeleteflag
+		FROM SAMPLEBOARD
+		WHERE brddeleteflag = 'N'
+        ORDER BY brdno DESC;
+        
+insert into sampleboard values(1, '테스트중입니다.', '홍길동', '테스트중입니다.', now(), 0, 'N');
+commit;
+
+create table as_userInfo (
+	user_Email varchar(100),
+    user_Password varchar(50)
+);
+
+commit;
+
+
+
