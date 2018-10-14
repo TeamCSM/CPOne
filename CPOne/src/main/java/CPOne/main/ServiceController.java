@@ -8,6 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/cpone/service/*")
 public class ServiceController {
 
+	/**
+	 * 작성자 : 전형동
+	 * 메소드 역할 : 서비스 화면
+	 * @return
+	 */
 	@RequestMapping(value="serviceMain.ino")
 	public ModelAndView serviceMain() {
 		

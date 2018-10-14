@@ -8,6 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/cpone/about/*")
 public class AboutController {
 
+	/**
+	 * 작성자 : 전형동
+	 * 메소드 역할 : 소개 화면
+	 * @return
+	 */
 	@RequestMapping(value="aboutMain.ino")
 	public ModelAndView aboutMain() {
 		

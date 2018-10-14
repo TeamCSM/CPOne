@@ -8,6 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/cpone/hotels/*")
 public class HotelsController {
 
+	/**
+	 * 작성자 : 전형동
+	 * 메소드 역할 : 호텔 화면
+	 * @return
+	 */
 	@RequestMapping(value="hotelsMain.ino")
 	public ModelAndView hotelsMain() {
 		

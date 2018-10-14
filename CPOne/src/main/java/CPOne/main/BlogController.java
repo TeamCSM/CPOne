@@ -8,6 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/cpone/blog/*")
 public class BlogController {
 
+	/**
+	 * 작성자 : 전형동
+	 * 메소드 역할 : 블로그 화면
+	 * @return
+	 */
 	@RequestMapping(value="blogMain.ino")
 	public ModelAndView blogMain() {
 		

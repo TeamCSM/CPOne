@@ -8,6 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/cpone/contact/*")
 public class ContactController {
 
+	/**
+	 * 작성자 : 전형동
+	 * 메소드 역할 : 문의 화면
+	 * @return
+	 */
 	@RequestMapping(value="contactMain.ino")
 	public ModelAndView contactMain() {
 		

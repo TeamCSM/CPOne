@@ -8,6 +8,12 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/cpone/tours/*")
 public class ToursController {
 
+	
+	/**
+	 * 작성자 : 전형동
+	 * 메소드 역할 : 투어 화면
+	 * @return
+	 */
 	@RequestMapping(value="toursMain.ino")
 	public ModelAndView toursMain() {
 		
