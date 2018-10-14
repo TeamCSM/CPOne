@@ -1,11 +1,11 @@
 ##Google MySQL
-jdbc.driverClassName = net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-jdbc.url =	jdbc:log4jdbc:mysql://35.234.3.37:3306/CPOne
-jdbc.username = CPOne
-jdbc.password = cpone1234
+#jdbc.driverClassName = net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#jdbc.url =	jdbc:log4jdbc:mysql://35.234.3.37:3306/CPOne
+#jdbc.username = CPOne
+#jdbc.password = cpone1234
 
 ##Local MySql  mysql-connector-java 버전 5.1.X 이후 버전부터
-#jdbc.driverClassName=com.mysql.cj.jdbc.Driver
-#jdbc.url=jdbc:mysql://localhost:3306/astory?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
-#jdbc.username=CPOne
-#jdbc.password=cpone1234
+jdbc.driverClassName=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/CPOne?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+jdbc.username=CPOne
+jdbc.password=1234

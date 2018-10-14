@@ -22,14 +22,12 @@
             <li class="nav-item"><a href="/cpone/blog/blogMain.ino" class="nav-link">Blog</a></li>
             <li class="nav-item"><a href="/cpone/about/aboutMain.ino" class="nav-link">About</a></li>
             <li class="nav-item"><a href="/cpone/contact/contactMain.ino" class="nav-link">Contact</a></li>
-            <c:choose>
-            	<c:when test="${not empty sessionScope.astory_User} }">
-					<li class="nav-item"><a href="#" class="nav-link">${sessionScope.astory_User} }</a></li>            		
-            	</c:when>
-            	<c:otherwise>
-            		<li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#login-modal">로그인</a></li>	
-            	</c:otherwise>
-            </c:choose>
+            <c:if test="${not empty sessionScope.cp_User }">
+	            <li class="nav-item"><a href="/cpone/user/logOut.ino" class="nav-link">${sessionScope.cp_User}</a></li>            		
+            </c:if>
+            <c:if test="${empty sessionScope.cp_User }">
+	            <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#login-modal">로그인</a></li>
+            </c:if>
           </ul>
         </div>
       </div>

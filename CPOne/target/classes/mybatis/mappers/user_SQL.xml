@@ -7,7 +7,7 @@
 	<select id="selectUserLoginCheck" parameterType="java.util.Map" resultType="int">
 		 SELECT
 		 	count(*)
-		 FROM as_userInfo
+		 FROM cp_userInfo
 		 
 		 WHERE 1=1
 		 and user_Email = #{user_Email}

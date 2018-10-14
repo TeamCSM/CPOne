@@ -135,8 +135,18 @@
 		    <artifactId>logback-core</artifactId>
 		    <version>1.2.3</version>
 		</dependency>
-		
-		
+		<dependency>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-classic</artifactId>
+		    <version>1.2.3</version>
+		    <exclusions>
+		    	<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+		    	</exclusion>
+		    </exclusions>
+		    <scope>test</scope>
+		</dependency>
 
 		<!-- 파일업로드 lib -->
 		<dependency>
@@ -152,11 +162,18 @@
 		</dependency>
 		
 		<!-- Spring Cloud GCP SQL DB -->
-		<dependency> <!-- ONLY USED LOCALY -->
+		<!-- <dependency> ONLY USED LOCALY
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.6</version> <!-- v5.x.x is Java 7, v6.x.x is Java 8 -->
+			<version>5.1.6</version> v5.x.x is Java 7, v6.x.x is Java 8
+		</dependency> -->
+		
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.11</version>
 		</dependency>
+		
 		
 		<dependency>
 			<groupId>com.google.cloud.sql</groupId>

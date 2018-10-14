@@ -13,9 +13,11 @@ SELECT
 insert into sampleboard values(1, '테스트중입니다.', '홍길동', '테스트중입니다.', now(), 0, 'N');
 commit;
 
-create table as_userInfo (
+create table cp_userInfo (
+	user_No int(11) unsigned auto_increment,
 	user_Email varchar(100),
-    user_Password varchar(50)
+    user_Password varchar(50),
+    primary key(user_No)
 );
 
 commit;

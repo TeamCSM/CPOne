@@ -53,8 +53,8 @@ public class UserServiceImpl implements UserService{
 		System.out.println("userCheck ::::::" + userCheck);
 		if(StringUtils.isNotEmpty(userCheck)) {
 			session.setAttribute("login", 0);
-			session.setAttribute("astory_User", userCheck);
-			System.out.println("::::::userLoginAction:::::" + session + params);
+			session.setAttribute("cp_User", params.get("user_Email"));
+			System.out.println("::::::userLoginAction:::::" + session.toString() + params);
 		}
 		return -1;
 	}

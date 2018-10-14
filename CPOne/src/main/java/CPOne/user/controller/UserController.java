@@ -39,7 +39,8 @@ public class UserController {
 		
 		if(lognCheck) {
 			userService.userLoginAction(params, session);
-			String sRtnPath = "redirect:/index.ino";
+			
+			String sRtnPath = "redirect:/";
 			mv.setViewName(sRtnPath);
 			
 			System.out.println("로그인 성공");
@@ -56,7 +57,7 @@ public class UserController {
 	@RequestMapping(value="logOut.ino")
 	public ModelAndView logOut(ModelAndView mv, HttpSession session){
 	    String page = "redirect:/index.ino";
-	    session.removeAttribute("astory_User");
+	    session.removeAttribute("cp_User");
 	    mv.setViewName(page);
 	    return mv;
 	}
