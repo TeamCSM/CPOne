@@ -50,9 +50,10 @@ public class UserServiceImpl implements UserService{
 	public int userLoginAction(Map<String, Object> params, HttpSession session) {
 		System.out.println("::::::userLoginAction:::::");
 		String userCheck = params.get("user_Email").toString();
+		System.out.println("userCheck ::::::" + userCheck);
 		if(StringUtils.isNotEmpty(userCheck)) {
 			session.setAttribute("login", 0);
-			session.setAttribute("astory_User", params);
+			session.setAttribute("astory_User", userCheck);
 			System.out.println("::::::userLoginAction:::::" + session + params);
 		}
 		return -1;

@@ -31,14 +31,25 @@ public class UserController {
 	 */
 	@RequestMapping(value="userLoginAction.ino")
 	@ResponseBody
-	public String userLoginAction (@RequestParam Map<String, Object> params, HttpSession session) throws Exception {
+	public ModelAndView userLoginAction (@RequestParam Map<String, Object> params, HttpSession session) throws Exception {
+		
+		ModelAndView mv = new ModelAndView();
 		
 		boolean lognCheck = userService.userLoginCheck(params);
 		
 		if(lognCheck) {
 			userService.userLoginAction(params, session);
+			String sRtnPath = "redirect:/index.ino";
+			mv.setViewName(sRtnPath);
+			
+			System.out.println("로그인 성공");
+			return mv;
 		}
-		return "/main/home";
+		else {
+			System.out.println("로그인 실패");
+		}
+		
+		return mv;
 	}
 	
 	//로그아웃 컨트롤러
