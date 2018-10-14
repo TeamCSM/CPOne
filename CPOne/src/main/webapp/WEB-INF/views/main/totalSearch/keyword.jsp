@@ -24,7 +24,7 @@
     <div>2nd Contents</div>
     <div>3rd Contents</div>
 </div -->>
-<!-- <style>
+<style>
 #searchWrap .tab {
     position: relative;
     width: 1100px;
@@ -64,7 +64,7 @@
     width: 100%;
     height: 100%;
 }
-</style> -->
+</style>
 <div id="searchWrap">
 	<!--[[ 통합검색 searchWrap Start ]]-->
 	<div class="title" title="검색하기"></div>
