@@ -3,9 +3,14 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="CPOne.user">
-	<select id="insertUser" parameterType="hashMap" resultType="int">
-		select count(*) from CPONE_user 
-		where cp_userid = #{id} and cp_userpass=#{pass}
+<mapper namespace="user">
+	<select id="selectUserLoginCheck" parameterType="java.util.Map" resultType="int">
+		 SELECT
+		 	count(*)
+		 FROM as_userInfo
+		 
+		 WHERE 1=1
+		 and user_Email = #{user_Email}
+		 and user_Password = #{user_Password}
 	</select>
 </mapper>
