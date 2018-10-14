@@ -1,24 +1,23 @@
-SELECT 
-			  brdno
-			, brdtitle
-			, brdwriter
-			, brdmemo
-			, DATE_FORMAT(brddate,'%Y-%m-%d') brddate
-			, brdhit
-			, brddeleteflag
-		FROM SAMPLEBOARD
-		WHERE brddeleteflag = 'N'
-        ORDER BY brdno DESC;
-        
-insert into sampleboard values(1, '테스트중입니다.', '홍길동', '테스트중입니다.', now(), 0, 'N');
+-- 계정 생성
+create database CPOne;
+show databases;
+
+create user 'CPOne'@localhost identified by '1234';
+
+grant all privileges on CPOne.* to 'CPOne'@localhost;
 commit;
 
+
+
+-- 유저 테이블 생성
 create table cp_userInfo (
 	user_No int(11) unsigned auto_increment,
 	user_Email varchar(100),
     user_Password varchar(50),
     primary key(user_No)
 );
+
+insert into cp_userInfo values(1, 'syas0301@naver.com', '1234');
 
 commit;
 
