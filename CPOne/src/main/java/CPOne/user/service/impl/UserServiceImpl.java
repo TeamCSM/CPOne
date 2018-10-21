@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService{
 	private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 	
 	@Autowired
-	SqlSessionTemplate sqlSession;
+	private SqlSessionTemplate sqlSession;
 
 	@Override
 	
@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService{
 		String userEmail = params.get("user_Email").toString();
 		String userPassword = params.get("user_Password").toString();
 		
-		logger.debug("------------------Login Check Start------------------");
+		logger.debug("\n"+"------------------Login Check Start------------------");
 		if(StringUtils.isNotEmpty(userEmail) && StringUtils.isNotBlank(userEmail) && StringUtils.isNotEmpty(userPassword) && StringUtils.isNotBlank(userPassword)) {
 			userLoginCheck = sqlSession.selectOne("selectUserLoginCheck", params);
 			logger.info("\n"+"------------------Login Check 성공------------------");
