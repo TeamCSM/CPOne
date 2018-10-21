@@ -6,6 +6,6 @@
 
 ##Local MySql  mysql-connector-java 버전 5.1.X 이후 버전부터
 jdbc.driverClassName=com.mysql.cj.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/CPOne?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+jdbc.url=jdbc:mysql://localhost:3306/CPOne?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
 jdbc.username=CPOne
 jdbc.password=1234

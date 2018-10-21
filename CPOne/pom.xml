@@ -46,6 +46,11 @@
 			<version>${org.slf4j-version}</version>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+	       <groupId>org.slf4j</groupId>
+	       <artifactId>slf4j-simple</artifactId>
+	       <version>${org.slf4j-version}</version>
+	    </dependency>
 
 
 		<!-- @Inject -->
@@ -93,7 +98,6 @@
 		</dependency>
 
 		<!-- aop lib -->
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -101,7 +105,6 @@
 		</dependency>
 
 		<!-- jdbc -->
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
@@ -109,7 +112,6 @@
 		</dependency>
 
 		<!-- mybatis lib -->
-
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -139,12 +141,6 @@
 		    <groupId>ch.qos.logback</groupId>
 		    <artifactId>logback-classic</artifactId>
 		    <version>1.2.3</version>
-		    <exclusions>
-		    	<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-api</artifactId>
-		    	</exclusion>
-		    </exclusions>
 		    <scope>test</scope>
 		</dependency>
 
