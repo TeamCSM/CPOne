@@ -30,7 +30,6 @@ public class HomeController {
 	@RequestMapping(value = "/index.ino", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("\n"+"----------------------Welcome CPOne!----------------------");
-		System.out.println("Welcome cpone!!!!!!!!! sysout");
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		

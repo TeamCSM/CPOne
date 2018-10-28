@@ -1,102 +1,219 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@charset "UTF-8";
 
-/****** LOGIN MODAL ******/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+@
+-webkit-keyframes Gradient { 0% {
+	background-position: 0% 50%
+}
+
+50%
+{
+background-position
+:
+ 
+100%
+50%
+}
+100%
+{
+background-position
+:
+ 
+0%
+50%
+}
+}
+@
+-moz-keyframes Gradient { 0% {
+	background-position: 0% 50%
+}
+
+50%
+{
+background-position
+:
+ 
+100%
+50%
+}
+100%
+{
+background-position
+:
+ 
+0%
+50%
+}
+}
+@
+keyframes Gradient { 0% {
+	background-position: 0% 50%
+}
+
+50%
+{
+background-position
+:
+ 
+100%
+50%
+}
+100%
+{
+background-position
+:
+ 
+0%
+50%
+}
+}
+a {
+	color: #777;
+}
+
+a:hover {
+	color: #f39305;
+	text-decoration: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.banner-heading {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 75px;
+	font-weight: 700;
+	line-height: 100px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.banner-sub-heading {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+.btn-warning {
+	background-color: #eca439;
+}
+
+.btn-warning:hover {
+	background-color: #f39305;
+}
+
+.form-control {
+	color: #d1d1d1;
+	font-size: 14px;
+	font-weight: 400;
+	border-bottom: 2px solid #f39305;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	height: 30px;
+}
+
+.form-check-input {
+	background-color: #fff !important;
+	border-radius: 50% !important;
+	border: 2px solid #f39305 !important;
+}
 
 .modal-content {
-  position: relative;
-  width:100%;
-  background-color: #F7F7F7; 
+	width: 400px;
+	margin: auto;
 }
 
-.loginmodal-container {
-  padding: 30px;
-  max-width: 350px;
-  width: 100% !important;
-  background-color: #F7F7F7;
-  margin: 0 auto;
-  border-radius: 2px;
-  border : none;
-  overflow: hidden;
-  font-family: roboto;
+.modal-header {
+	padding: 0.7rem 1rem;
+	border-bottom: 1px solid #e9ecef;
+	border-radius: 0;
+	background-color: #0080c0;
 }
 
-.loginmodal-container h1 {
-  text-align: center;
-  font-size: 1.8em;
-  font-family: roboto;
+.modal-title {
+	font-size: 16px;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
 }
 
-.loginmodal-container input[type=submit] {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-  position: relative;
+.modal-body {
+	background-image: url('http://snippetimg.meditialabs.com/bgs/bg1.jpg');
+	background-position: top left;
+	background-size: cover;
+	width: 100%;
+	padding: 1.5rem 3rem 3rem 3rem;
 }
 
-.loginmodal-container input[type=text], input[type=password] {
-  height: 44px;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  
+body.modal-open .supreme-container {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	filter: blur(1px);
 }
 
-.loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
-  
-  
-  
+.text-intro {
+	font-size: 0.8em;
+	color: #777;
+	text-align: center;
 }
 
-.loginmodal {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  height: 36px;
-  padding: 0 8px;
-  border-radius: 3px;
- -webkit-user-select: none;
-  user-select: none;
+.form-div {
+	background-color: #fff;
+	padding: 2em 1.5em;
+	box-shadow: 2px 2px 2px 2px rgba(215, 215, 215, 0.5);
 }
 
-.loginmodal-submit {
-  /* border: 1px solid #3079ed; */
-  border: 0px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color: #4d90fe;
-  padding: 17px 0px;
-  font-family: roboto;
-  font-size: 14px;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed));
+form {
+	border: 0 !important;
 }
 
-.loginmodal-submit:hover {
-  /* border: 1px solid #2f5bb7; */
-  border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8));
+@media ( max-width :500px) {
+	.modal-content {
+		width: 330px;
+		margin: auto;
+	}
+	.banner-heading {
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	.banner-sub-heading {
+		font-size: 10px;
+		font-weight: 200;
+		line-height: 10px;
+		margin-bottom: 40px;
+	}
 }
 
-.loginmodal-container a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity ease 0.5s;
-} 
-
-.login-help{
-  font-size: 12px;
+@media ( max-width :768px) {
+	.banner-text {
+		padding: 150px 0 150px 0;
+	}
+	.banner-sub-heading {
+		font-size: 23px;
+		font-weight: 200;
+		line-height: 23px;
+		margin-bottom: 40px;
+	}
 }
+
+.loginBtn{
+	display: flex;
+}
+.loginBtn > button {
+	margin : auto;
+	width : 110px;
+	font-size : 12px;
+	color : #fff;
+}
+
+

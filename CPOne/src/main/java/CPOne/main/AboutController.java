@@ -16,6 +16,7 @@ public class AboutController {
 	@RequestMapping(value="aboutMain.ino")
 	public ModelAndView aboutMain() {
 		
+		System.out.println("test aboutMain");
 		ModelAndView mv = new ModelAndView();
 		
 		String sRtnPath = "main/about/about_main";
